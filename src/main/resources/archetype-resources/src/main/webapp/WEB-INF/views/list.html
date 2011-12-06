@@ -1,0 +1,55 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<title></title>
+<meta name="description" content="HTML 5 CSS 3 Spring Form" />
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<link rel="stylesheet" href="../../css/style.css"
+	th:href="@{/css/style.css}" />
+
+<script src="../../js/libs/modernizr-2.0.6.min.js" th:src="@{/js/libs/modernizr-2.0.6.min.js}"></script>
+</head>
+
+<body>
+	<div id="container">
+		<table id="display-data">
+			<thead>
+				<tr>
+					<th th:text="${symbol_pound}{theader.count}"></th>
+					<th th:text="${symbol_pound}{theader.name}"></th>
+					<th th:text="${symbol_pound}{theader.email}"></th>
+					<th th:text="${symbol_pound}{theader.phone}"></th>
+					<th th:text="${symbol_pound}{theader.website}"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="msg, rowStat : ${symbol_dollar}{messages}">
+					<td th:text="${symbol_dollar}{rowStat.count}">1</td>
+					<td th:text="${symbol_dollar}{msg.name}">My Name</td>
+					<td th:text="${symbol_dollar}{msg.email}">my@email.com</td>
+					<td th:text="${symbol_dollar}{msg.phone}">9999</td>
+					<td th:text="${symbol_dollar}{msg.website}">http://mysite.com</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script>
+		/*<![CDATA[*/
+		     //Embbeded Javascript         
+		/*]]>*/
+	</script>
+
+</body>
+</html>
