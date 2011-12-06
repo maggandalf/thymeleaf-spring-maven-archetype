@@ -4,7 +4,7 @@
 
   <groupId>org.alexsotob</groupId>
   <artifactId>thymeleaf-spring-maven-archetype</artifactId>
-  <version>1.0.0-BUILD-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>maven-archetype</packaging>
 
   <name>thymeleaf-spring-maven-archetype</name>
