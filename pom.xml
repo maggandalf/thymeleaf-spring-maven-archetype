@@ -27,4 +27,14 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <developers>
+    <developer>
+      <id>asotobu</id>
+        <name>Alex Soto</name>
+	<email>asotobu AT gmail.com</email>
+	<url>http://alexsotob.blogspot.com</url>
+    </developer>
+  </developers>
+
 </project>
