@@ -27,10 +27,15 @@ Versions
 --------
 
 Spring: 3.0.5
+
 Thymeleaf: 1.1.2
+
 Hibernate-Validator: 4.1.0
+
 Slf4j: 1.5.10
+
 Servlet-api: 2.5
+
 JUnit: 4.9
 
 Installation
@@ -41,11 +46,14 @@ Installation
 Execute:
 
 `mvn clean install`
+
 `mvn archetype:generate -DarchetypeCatalog=local`
 
 ### From jar:
 
 Download archetype from:
+
+(https://github.com/maggandalf/thymeleaf-spring-maven-archetype/downloads)
 
 Execute:
 
