@@ -1,40 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.alexsotob</groupId>
-  <artifactId>thymeleaf-spring-maven-archetype</artifactId>
-  <version>1.0.0</version>
-  <packaging>maven-archetype</packaging>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
 
-  <name>thymeleaf-spring-maven-archetype</name>
+	<groupId>com.lordofthejars.thymeleafarchetype</groupId>
+	<artifactId>thymeleaf-spring-maven-archetype</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>maven-archetype</packaging>
 
-  <build>
-    <extensions>
-      <extension>
-        <groupId>org.apache.maven.archetype</groupId>
-        <artifactId>archetype-packaging</artifactId>
-        <version>2.1</version>
-      </extension>
-    </extensions>
+	<description>Thymeleaf Spring Maven Archetype</description>
+	<name>thymeleaf-spring-maven-archetype</name>
+	<url>https://github.com/maggandalf/thymeleaf-spring-maven-archetype</url>
 
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-archetype-plugin</artifactId>
-          <version>2.1</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
-  <developers>
-    <developer>
-      <id>asotobu</id>
-        <name>Alex Soto</name>
-	<email>asotobu AT gmail.com</email>
-	<url>http://alexsotob.blogspot.com</url>
-    </developer>
-  </developers>
+	<scm>
+		<connection>scm:git:git@github.com:maggandalf/thymeleaf-spring-maven-archetype.git</connection>
+		<url>scm:git:git@github.com:maggandalf/thymeleaf-spring-maven-archetype.git</url>
+		<developerConnection>scm:git:git@github.com:maggandalf/thymeleaf-spring-maven-archetype.git</developerConnection>
+	</scm>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+				<version>2.1</version>
+			</extension>
+		</extensions>
+
+		<plugins>
+		
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.1</version>
+			</plugin>
+
+		</plugins>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-archetype-plugin</artifactId>
+					<version>2.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+
+
+	<developers>
+		<developer>
+			<id>asotobu</id>
+			<name>Alex Soto</name>
+			<email>asotobu AT gmail.com</email>
+			<url>http://www.lordofthejars.com</url>
+		</developer>
+	</developers>
 
 </project>

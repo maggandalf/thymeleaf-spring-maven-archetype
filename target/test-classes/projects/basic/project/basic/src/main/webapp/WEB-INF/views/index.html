@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<title></title>
+<meta name="description" content="HTML 5 CSS 3 Spring Form"/>
+
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+<link rel="stylesheet" href="../../css/style.css" th:href="@{/css/style.css}"/>
+<script src="../../js/libs/modernizr-2.0.6.min.js" th:src="@{/js/libs/modernizr-2.0.6.min.js}"></script>
+</head>
+
+<body>
+	<div id="container">
+		<header> </header>
+
+		<form action="#" th:object="${messageInfo}" th:action="@{/insert}"
+			method="post">
+
+			<h1>Get In Touch With Us ...</h1>
+
+
+			<fieldset id="user-details">
+			
+
+				<label for="name" th:text="#{theader.name}">Name: </label> 
+				<input type="text" name="name"
+					value="" id="name" placeholder="Your Name" required="required"
+					autofocus="autofocus" th:value="*{name}" /> 
+				<label for="email" th:text="#{theader.email}">Email: </label>
+				<input type="email" name="email" value="" id="email" placeholder="mail@email.com" required="required" th:value="*{email}" /> 
+				<label for="phone" th:text="#{theader.phone}">Phone: </label> 
+				<input type="text" name="phone" value="" th:value="*{phone}"/>
+				<label for="website" th:text="#{theader.website}">Website:</label> 
+				<input type="url" name="website" value="" th:value="*{website}" />
+				
+			</fieldset>
+			<!--end user-details-->
+			
+			<fieldset id="user-message">
+
+				<label for="message" th:text="#{theader.message}">Your Message: </label>
+				<textarea name="message" rows="0" cols="0" th:value="*{message}" ></textarea>
+
+				<input type="submit" value="Submit Message" name="submit"
+					class="submit" />
+			</fieldset>
+			<!-- end user-message -->
+			<div id="errors" th:if="${#fields.hasErrors('*')}">
+					<ul>
+						<li th:each="err : ${#fields.errors('*')}" th:text="${err}">Input is incorrect</li>
+					</ul>
+			</div>
+		</form>
+
+		<footer>
+			
+		</footer>
+	</div>
+	<!--! end of #container -->
+
+	
+	<script>
+		/*<![CDATA[*/
+		      //Embbeded Javascript    
+		/*]]>*/
+	</script>
+
+</body>
+</html>
