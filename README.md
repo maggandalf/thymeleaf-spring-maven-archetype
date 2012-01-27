@@ -10,7 +10,7 @@ The main goal of Thymeleaf is to provide an elegant and well-formed way of creat
 
 Website: (http://www.thymeleaf.org/)
 
-HTML5 + CSS 3 Form Using Thymeleaf + Spring MVC: (http://alexsotob.blogspot.com/2011/11/your-big-daddys-got-no-place-to-stay.html)
+HTML5 + CSS 3 Form Using Thymeleaf + Spring MVC: (http://www.lordofthejars.com/2011/11/your-big-daddys-got-no-place-to-stay.html)
 
 Application
 -----------
@@ -53,12 +53,12 @@ Execute:
 
 Download archetype from:
 
-(https://github.com/maggandalf/thymeleaf-spring-maven-archetype/downloads)
+(https://oss.sonatype.org/content/repositories/releases/com/lordofthejars/thymeleafarchetype/thymeleaf-spring-maven-archetype/1.0.0/thymeleaf-spring-maven-archetype-1.0.0.jar)
 
 Execute:
 
 `mvn install:install-file \
-   -DgroupId=org.alexsotob \
+   -DgroupId=com.lordofthejars \
    -DartifactId=thymeleaf-spring-maven-archetype \
    -Dversion=DOWNLOADED_VERSION \
    -Dpackaging=jar 
@@ -67,7 +67,7 @@ Execute:
 Contact
 --------
 
-Blog: (alexsotob.blogspot.com)
+Blog: (www.lordofthejars.com)
 
 Twitter: @alexsotob
 
