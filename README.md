@@ -64,6 +64,15 @@ Execute:
    -Dpackaging=jar 
    -Dfile=PATH_TO_JAR_YOU_DOWNLOADED/thymeleaf-spring-maven-archetype-VERSION.jar`
 
+or:
+
+`mvn install:install-file \
+   -DgroupId=com.lordofthejars \
+   -DartifactId=thymeleaf-spring-maven-archetype \
+   -Dversion=DOWNLOADED_VERSION \
+   -Dpackaging=jar 
+   -Dfile=https://oss.sonatype.org/content/repositories/releases/com/lordofthejars/thymeleafarchetype/thymeleaf-spring-maven-archetype/1.0.0/thymeleaf-spring-maven-archetype-1.0.0.jar`
+
 Contact
 --------
 
